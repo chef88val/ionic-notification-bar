@@ -8,8 +8,6 @@ gulp.task('minify', function() {
         .pipe(gulp.dest('./dist/'));
 
     gulp.src('src/*.css')
-        .pipe(minifyCss({
-            keepSpecialComments: 0
-        }))
+        .pipe(minifyCss()
         .pipe(gulp.dest('./dist/'));
 });
