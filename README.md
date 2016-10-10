@@ -14,9 +14,9 @@ You can get this package using Bower:
 Then you have to inject it in your index.html file:
 ````html
 <!--insert the css file after the ionic.css file-->
-<link rel="stylesheet" type="text/css" href="lib/ionic-notification-bar/notification-bar.css">
+<link rel="stylesheet" type="text/css" href="lib/ionic-notification-bar/dist/notification-bar.min.css">
 <!--insert the js file after the ionic bundle-->
-<script type="text/javascript" src="lib/ionic-notification-bar/notification-bar.js"></script>
+<script type="text/javascript" src="lib/ionic-notification-bar/dist/notification-bar.min.js"></script>
 ````
 
 ##Usage

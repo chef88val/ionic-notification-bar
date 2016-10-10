@@ -1,5 +1,7 @@
-//Created by Guillaume Emery
-//https://www.github.com/guysmv
+/**
+ * Guillaume Emery - https://github.com/guysmv/ionic-notification-bar
+ * Licensed under the MIT License
+ */
 angular.module('ionic-notification-bar', ['ionic'])
 .service('$notificationBar', function($log) {
     this.timer = 3000;

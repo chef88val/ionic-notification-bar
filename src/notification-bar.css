@@ -1,3 +1,7 @@
+/**
+ * Guillaume Emery - https://github.com/guysmv/ionic-notification-bar
+ * Licensed under the MIT License
+ */
 @-webkit-keyframes appear {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
