@@ -2,6 +2,10 @@
 Simple cross-platform notification bar using just CSS.
 
 ![ionic-notification-bar](demo.gif "See the demo project...")
+
+[SEE THIS DEMO ON GITHUB PAGES](https://guysmv.github.io/ionic-notification-bar/)
+
+
 ##Prerequistes
 This package needs:
 * A working ionic installation
