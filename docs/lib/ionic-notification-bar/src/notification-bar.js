@@ -17,7 +17,6 @@ angular.module('ionic-notification-bar', ['ionic'])
             var context = this;
             if (this.isVisible === true) {
                 this.remove();
-                clearTimeout(this.handler);
             }
             angular.element(document.body).append("<div class='snack " + type + "'>" + message + "</div>");
             this.isVisible = true;
@@ -30,10 +29,11 @@ angular.module('ionic-notification-bar', ['ionic'])
         };
         this.remove = function () {
             var tab = angular.element(document.body).children();
-            for (var i = tab.length - 1; i > 1; i--) {
+            for (var i = tab.length - 1; i > 0; i--) {
                 if (tab[i].className.indexOf('snack') > - 1) {
                     tab[i].remove();
                     this.isVisible = false;
+                    clearTimeout(this.handler);
                     break;
                 }
             }
