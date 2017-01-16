@@ -48,3 +48,6 @@ $notificationBar.setDuration([integer_value])
 
 #### 1) v0.1.0
 Initial working version
+
+#### 2) v0.2.0
+Responsive notification bar

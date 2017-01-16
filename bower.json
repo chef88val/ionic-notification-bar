@@ -1,9 +1,9 @@
 {
   "name": "ionic-notification-bar",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Simple cross-platform notification bar using just CSS for Ionic Projects",
   "main": [
-    "./dist/notification-bar.js", 
+    "./dist/notification-bar.js",
     "./dist/notification-bar.css"
   ],
   "keywords": [
