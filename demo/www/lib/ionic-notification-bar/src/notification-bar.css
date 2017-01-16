@@ -1,3 +1,7 @@
+/**
+ * Guillaume Emery - https://github.com/guysmv/ionic-notification-bar
+ * Licensed under the MIT License
+ */
 @-webkit-keyframes appear {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
@@ -69,6 +73,16 @@
 	        animation-name:appear;
 	-webkit-animation-duration: 0.3s;
 	        animation-duration: 0.3s;
+}
+@media(min-width:768px){
+  .snack{
+    bottom: 7px;
+    right: 7px;
+    left:auto;
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+  }
 }
 .snack-exit{
 	-webkit-animation-name:disp;

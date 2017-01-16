@@ -1,9 +1,10 @@
 {
   "name": "ionic-notification-bar",
+  "version": "0.1.0",
   "description": "Simple cross-platform notification bar using just CSS for Ionic Projects",
   "main": [
-    "./src/notification-bar.js",
-    "./src/notification-bar.css"
+    "./dist/notification-bar.js",
+    "./dist/notification-bar.css"
   ],
   "keywords": [
     "notification",
@@ -18,19 +19,23 @@
   "license": "MIT",
   "homepage": "https://github.com/guysmv/ionic-notification-bar",
   "ignore": [
-    "**/.*",
     "node_modules",
-    "bower_components",
-    "demo"
+    "demo",
+    ".gitignore",
+    "bower.json",
+    "demo.gif",
+    "gulpfile.js",
+    "package.json",
+    "README.md"
   ],
-  "_release": "566a46946b",
+  "_release": "0.1.0",
   "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "566a46946b95b1b30421cffaa0d80615b9462d7c"
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "fb1ed82edfd84cb9218863412b6232164b345ef4"
   },
   "_source": "https://github.com/guysmv/ionic-notification-bar.git",
-  "_target": "*",
+  "_target": "^0.1.0",
   "_originalSource": "ionic-notification-bar",
   "_direct": true
 }
