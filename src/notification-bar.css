@@ -60,7 +60,7 @@
 	-webkit-align-items:center;
 	    -ms-flex-align:center;
 	        align-items:center;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -90,13 +90,3 @@
 	-webkit-animation-duration: 0.3s;
 	        animation-duration: 0.3s;
 }
-.snack.alert{
-	background-color:red;
-}
-.snack.info{
-	background-color:orange;
-}
-.snack.success{
-	background-color:green;
-}
-

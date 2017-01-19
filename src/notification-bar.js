@@ -8,17 +8,23 @@ angular.module('ionic-notification-bar', ['ionic'])
         this.handler = undefined;
         this.isVisible = false;
 
-        //name of the CSS classes : you can add you own!
-        this.SUCCESS = 'success';
-        this.ALERT = 'alert';
-        this.INFO = 'info';
+        /**
+         * Constants for colors - You can add your own
+         * You can use it as follow:
+         * notificationBar.show('message', notificationBarProvider.SUCCESS) -- for SUCCESS
+         * You can also change color of notification in your code: notificationBarProvider.SUCCESS = "#91EDB1"
+         * Caution: you must pass correct CSS color value (hex, rgb, rgba or constant)
+         */
+        this.SUCCESS = "green";
+        this.ALERT = "red";
+        this.INFO = "yellow";
 
         this.show = function (message, type) {
             var context = this;
             if (this.isVisible === true) {
                 this.remove();
             }
-            angular.element(document.body).append("<div class='snack " + type + "'>" + message + "</div>");
+            angular.element(document.body).append("<div class='snack' style='background-color: " + type + ";'>" + message + "</div>");
             this.isVisible = true;
             this.handler = setTimeout(function () {
                 angular.element(document.querySelector('.snack')).addClass('snack-exit');
@@ -42,6 +48,6 @@ angular.module('ionic-notification-bar', ['ionic'])
             if (angular.isDefined(value) && Number.isInteger(value)) {
                 this.timer = 3000;
             }
-            else $log.error("Value specified in setDuration is not an integer (value is in miliseconds ; default is 3000)!");
+            else $log.debug("Value specified in setDuration is not an integer (value is in miliseconds ; default is 3000)!");
         };
     });
