@@ -43,7 +43,9 @@ Notification type can be:
 * $notificationBar.INFORMATION
 
 You can modify the color of the different bar by setting the values of these variables (with hex string or rgb/rgba values).
-```$notificationBar.ALERT = "#ff0000";```
+````javacript
+$notificationBar.ALERT = "#ff0000";
+````
 
 You can set the duration of the notification using the function :
 ````javascript
